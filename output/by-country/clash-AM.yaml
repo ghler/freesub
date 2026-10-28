@@ -5,14 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇦🇲 亚美尼亚 (Armenia) 01 - xiaohe
-  server: 194.36.37.59
-  port: 10004
+  server: am1.pc-nodalys.top
+  port: 443
   udp: true
   type: vless
-  uuid: f7376394-cd54-11f1-bb6a-bff6d0326f6a
-  network: ws
-  ws-opts:
-    path: /vpnjantit
+  uuid: 4b1be712-774c-4b65-8491-a3339e124a70
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: v36yrZJ-5Zikx9eh_SXaoDS2GuobOA4_WLagBVO0vxk
+    short-id: a9c3f7e2
+  servername: am1.pc-nodalys.top
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
