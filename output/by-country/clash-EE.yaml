@@ -5,24 +5,39 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
-  server: 13.143.239.127
+  server: 141.0.187.15
   port: 443
   udp: true
   type: hysteria2
-  password: 2a0fc918-9c61-451b-a9ad-e8f796e70f52
-  sni: nl1.obxodvpn.us
+  password: 70043bfa-d6fb-4980-b27e-773e9e8b2004
+  sni: crt.onecloudstream.com
   skip-cert-verify: false
+- name: 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
+  server: 185.225.205.53
+  port: 443
+  udp: true
+  type: vless
+  uuid: 3d526c7f-059c-4e2b-b09a-8569b268935b
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: 2XyUS3_ONl5REQ7NiwikdJphAe7oJ61-21zuqnN67y8
+    short-id: 2e82d7ac
+  servername: addons.mozilla.org
+  client-fingerprint: chrome
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇪🇪 爱沙尼亚 (Estonia) 01 - xiaohe
+  - 🇪🇪 爱沙尼亚 (Estonia) 02 - xiaohe
 rules:
 - MATCH,PROXIES

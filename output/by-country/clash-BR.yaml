@@ -13,20 +13,13 @@ proxies:
   sni: findtemporaryworkandfreelancerprojectsonlineplatform.com
   skip-cert-verify: false
 - name: 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  server: br001.zestapp778.com
+  server: 216.238.116.204
   port: 39533
   udp: true
   type: trojan
   password: 5t6i121em5lkmsmk
   sni: br001.zestapp778.com
   skip-cert-verify: false
-- name: 🇧🇷 巴西 (Brazil) 03 - xiaohe
-  server: 216.128.168.190
-  port: 8388
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: owVdNnQcdPgthSyX
 proxy-groups:
 - name: PROXIES
   type: select
@@ -34,7 +27,6 @@ proxy-groups:
   - AUTO
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
   - 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  - 🇧🇷 巴西 (Brazil) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -42,6 +34,5 @@ proxy-groups:
   proxies:
   - 🇧🇷 巴西 (Brazil) 01 - xiaohe
   - 🇧🇷 巴西 (Brazil) 02 - xiaohe
-  - 🇧🇷 巴西 (Brazil) 03 - xiaohe
 rules:
 - MATCH,PROXIES
