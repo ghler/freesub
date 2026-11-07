@@ -5,19 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇨🇳 CN 01 - xiaohe
-  server: 104.21.91.49
-  port: 443
+  server: 120.48.133.162
+  port: 10086
   udp: true
-  type: vless
-  uuid: fc7d2cfe-f5ef-40c8-a848-a0bdc11f6349
-  tls: true
-  servername: vpn.cintaku.qzz.io
-  skip-cert-verify: false
+  type: vmess
+  uuid: 2a489513-46b5-488c-9899-9faaf2d83cd9
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /vlessws
-    headers:
-      Host: vpn.cintaku.qzz.io
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
