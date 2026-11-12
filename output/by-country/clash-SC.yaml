@@ -17,14 +17,7 @@ proxies:
   servername: cloudflare-dns.com
   client-fingerprint: firefox
 - name: 🇸🇨 塞舌尔 (Seychelles) 02 - xiaohe
-  server: 45.207.207.25
-  port: 443
-  udp: true
-  type: ss
-  cipher: aes-256-gcm
-  password: gj1+XKulKV0nmw6IThckOkkJh5DSM7+C
-- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
-  server: hk3n.wxgqlfx.vip
+  server: 156.226.168.221
   port: 35193
   udp: true
   type: vless
@@ -36,6 +29,17 @@ proxies:
     short-id: e8daed2d
   servername: www.apple.com
   client-fingerprint: chrome
+- name: 🇸🇨 塞舌尔 (Seychelles) 03 - xiaohe
+  server: 156.239.224.107
+  port: 57278
+  udp: true
+  type: vmess
+  uuid: 1270bed5-f908-4ecc-f1c8-de246033b186
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
 proxy-groups:
 - name: PROXIES
   type: select
