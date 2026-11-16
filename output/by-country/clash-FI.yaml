@@ -5,13 +5,13 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇫🇮 芬兰 (Finland) 01 - xiaohe
-  server: 94.183.164.119
-  port: 24433
+  server: 65.108.240.210
+  port: 39018
   udp: true
-  type: hysteria2
-  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
-  sni: lakes.blog-forme.ru
-  skip-cert-verify: false
+  type: vmess
+  uuid: 45dc10c6-04c8-4c70-a06a-d396254a6c0b
+  alterId: 0
+  cipher: auto
 - name: 🇫🇮 芬兰 (Finland) 02 - xiaohe
   server: 45.144.234.157
   port: 14430
@@ -24,41 +24,71 @@ proxies:
     headers:
       Host: 45.144.234.157
 - name: 🇫🇮 芬兰 (Finland) 03 - xiaohe
-  server: 177.202.65.158
-  port: 443
+  server: 94.183.164.119
+  port: 24433
   udp: true
   type: hysteria2
-  password: 247802ca-0fbb-428a-b807-91a6e571b5c7
-  sni: hy2-fi2.snobvpn.online
+  password: 549766c3-fa5f-471e-8031-ffc1f8d5064f
+  sni: 94.183.164.119
   skip-cert-verify: true
-  obfs: salamander
-  obfs-password: AJyvWNsoDgVkMkboZ3juMJXYNRf6uEQE
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
-  server: 191.217.252.31
-  port: 443
+  server: 157.180.98.124
+  port: 49659
   udp: true
   type: vless
-  uuid: 7d718630-7a1a-4af8-9332-aa0610634e8a
-  tls: true
-  servername: media.saari.lalibobi.online
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: ws
-  ws-opts:
-    path: /live/showroom
-- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
-  server: 94.183.234.245
-  port: 443
-  udp: true
-  type: vless
-  uuid: 5de0c218-0138-45d8-94d2-c2c3f37a1a6d
+  uuid: 88a558b1-9645-42f3-89e5-341570d8486d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: tfFzmbVByvoZxxIEUiHMv22_k0-nQz00L0XjU0bd_Fc
-    short-id: 7f1e29593aa94ad1
-  servername: www.bing.com
-  client-fingerprint: qq
+    public-key: bBVqro8tG6swTNoAkjwUzcu4Ew4N4VcyDHzADcGviCs
+    short-id: 81959fce
+  servername: apple.com
+  client-fingerprint: chrome
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  server: 85.192.49.126
+  port: 443
+  udp: true
+  type: vless
+  uuid: 8197b9b9-8945-460f-99c9-325ef8a8a7c3
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: ATdIZVxBUo5bVQJtcoWBU1k8qlHdNniJ2gF1iDc8rEQ
+    short-id: 76efb045
+  servername: fi3.gofizzin.com
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  server: fi1.obxodvpn.us
+  port: 443
+  udp: true
+  type: hysteria2
+  password: 146d567c-6335-4e63-a8aa-7ec068642440
+  sni: fi1.obxodvpn.us
+  skip-cert-verify: false
+- name: 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  server: 196.240.181.132
+  port: 443
+  udp: true
+  type: vless
+  uuid: 2208b003-78b1-453c-b5ca-ce847ff0efd6
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: jRHg94HymqCnI9LLFHMBxvi9URv_AOMgJxhLkOVuCl8
+    short-id: 0bfd7d104dcc9cae
+  servername: 45b545t.fi7.h1clayd.click
+  client-fingerprint: firefox
+- name: 🇫🇮 芬兰 (Finland) 08 - xiaohe
+  server: 129.101.100.219
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7ad63b26-bf70-4872-8fab-ebaf73a1e19d
+  flow: xtls-rprx-vision
+  tls: true
+  servername: db-28.topp-con.xyz
+  skip-cert-verify: false
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +99,9 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,5 +112,8 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
   - 🇫🇮 芬兰 (Finland) 05 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 06 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 07 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 08 - xiaohe
 rules:
 - MATCH,PROXIES
