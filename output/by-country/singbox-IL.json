@@ -4,23 +4,32 @@
   },
   "outbounds": [
     {
-      "type": "hysteria2",
+      "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 01 - xiaohe",
-      "server": "129.159.156.109",
-      "server_port": 50160,
-      "password": "f25f19f29ce3fb53a35bf1b35b452a43",
+      "server": "185.95.231.156",
+      "server_port": 443,
+      "uuid": "1f8cf47a-b66a-4916-979f-26edfcf44eea",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "www.bing.com",
-        "insecure": true
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "8eXftARun6KH38UZhuqIfPR1VF2DLS9RMBZEnF5k6To",
+          "short_id": "a3a578ab"
+        }
       }
     },
     {
       "type": "vless",
       "tag": "🇮🇱 以色列 (Israel) 02 - xiaohe",
-      "server": "195.206.235.72",
+      "server": "153.56.229.218",
       "server_port": 443,
-      "uuid": "26843758-24de-4f76-b5d0-624038e353c4",
+      "uuid": "ba0dbd83-3569-46dc-bc3d-ef6e58ffc97b",
       "tls": {
         "enabled": true,
         "server_name": "71b840t.de7.h1clayd.click",
@@ -46,7 +55,7 @@
         "server_name": "961ec0g.nl17.h1clayd.click",
         "utls": {
           "enabled": true,
-          "fingerprint": ""
+          "fingerprint": "firefox"
         },
         "reality": {
           "enabled": true,
@@ -60,24 +69,15 @@
       }
     },
     {
-      "type": "vless",
+      "type": "hysteria2",
       "tag": "🇮🇱 以色列 (Israel) 04 - xiaohe",
-      "server": "195.206.235.202",
-      "server_port": 443,
-      "uuid": "4201786b-d99b-4147-a5f0-20d47acddb81",
-      "flow": "xtls-rprx-vision",
+      "server": "129.159.156.109",
+      "server_port": 50160,
+      "password": "f25f19f29ce3fb53a35bf1b35b452a43",
       "tls": {
         "enabled": true,
-        "server_name": "4935e4t.de25.h1clayd.click",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "MzgB17ZFbKqs8pbC3EscTzHid_ENc-k_Cp6nXl-2knw",
-          "short_id": "6976d670818644cc"
-        }
+        "server_name": "www.bing.com",
+        "insecure": true
       }
     },
     {

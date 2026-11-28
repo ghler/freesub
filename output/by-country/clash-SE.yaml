@@ -23,7 +23,7 @@ proxies:
   servername: xmfhlpy.com
   skip-cert-verify: false
 - name: 🇸🇪 瑞典 (Sweden) 03 - xiaohe
-  server: leviko-se6979.shopingggg.ir
+  server: 138.124.86.230
   port: 48115
   udp: true
   type: vless
@@ -56,6 +56,32 @@ proxies:
     path: /vless
     headers:
       Host: 5.178.109.174
+- name: 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  server: 92.63.193.41
+  port: 443
+  udp: true
+  type: vless
+  uuid: f4b08bf1-d9bd-4755-aa88-ba922282c608
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: Hk7E17R41exzrPKAOeETobKQ0LOAmuLSzFXdEwLSmiQ
+    short-id: b92d7008f05da71e
+  servername: ruswedmicro2.gangplatform.com
+  client-fingerprint: qq
+- name: 🇸🇪 瑞典 (Sweden) 07 - xiaohe
+  server: 2.26.124.209
+  port: 443
+  udp: true
+  type: vless
+  uuid: 848951d4-c5a5-484c-897d-d777929bcdc2
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: aykMwW19tGa685HLa9yI8FDTH567ovT4KipCSUHEySk
+    short-id: '54325343'
+  servername: gateway.icloud.com
+  client-fingerprint: firefox
 proxy-groups:
 - name: PROXIES
   type: select
@@ -66,6 +92,8 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -76,5 +104,7 @@ proxy-groups:
   - 🇸🇪 瑞典 (Sweden) 03 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 04 - xiaohe
   - 🇸🇪 瑞典 (Sweden) 05 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 06 - xiaohe
+  - 🇸🇪 瑞典 (Sweden) 07 - xiaohe
 rules:
 - MATCH,PROXIES
